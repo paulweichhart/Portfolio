@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		FF90CC56248BC63300352AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC55248BC63300352AB1 /* Assets.xcassets */; };
 		FF90CC59248BC63300352AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC58248BC63300352AB1 /* Preview Assets.xcassets */; };
 		FF90CC5C248BC63300352AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC5A248BC63300352AB1 /* LaunchScreen.storyboard */; };
+		FFD0FAF0248BC6DF005FD94F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAEF248BC6DF005FD94F /* CoreDataStack.swift */; };
+		FFD0FAF7248BC828005FD94F /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = FFD0FAF6248BC828005FD94F /* ComposableArchitecture */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,7 @@
 		FF90CC58248BC63300352AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF90CC5B248BC63300352AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF90CC5D248BC63300352AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFD0FAEF248BC6DF005FD94F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD0FAF7248BC828005FD94F /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +62,14 @@
 		FF90CC4B248BC63200352AB1 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				FF90CC4C248BC63200352AB1 /* AppDelegate.swift */,
-				FF90CC4E248BC63200352AB1 /* SceneDelegate.swift */,
-				FF90CC53248BC63200352AB1 /* ContentView.swift */,
+				FFD0FAF1248BC73C005FD94F /* AppDelegate */,
+				FFD0FAF4248BC778005FD94F /* Network */,
+				FFD0FAEE248BC6B9005FD94F /* Database */,
+				FFD0FAF2248BC748005FD94F /* View */,
+				FFD0FAF3248BC750005FD94F /* ViewModel */,
 				FF90CC55248BC63300352AB1 /* Assets.xcassets */,
 				FF90CC5A248BC63300352AB1 /* LaunchScreen.storyboard */,
 				FF90CC5D248BC63300352AB1 /* Info.plist */,
-				FF90CC50248BC63200352AB1 /* Portfolio.xcdatamodeld */,
 				FF90CC57248BC63300352AB1 /* Preview Content */,
 			);
 			path = Portfolio;
@@ -76,6 +81,46 @@
 				FF90CC58248BC63300352AB1 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FFD0FAEE248BC6B9005FD94F /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0FAEF248BC6DF005FD94F /* CoreDataStack.swift */,
+				FF90CC50248BC63200352AB1 /* Portfolio.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		FFD0FAF1248BC73C005FD94F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				FF90CC4C248BC63200352AB1 /* AppDelegate.swift */,
+				FF90CC4E248BC63200352AB1 /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		FFD0FAF2248BC748005FD94F /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FF90CC53248BC63200352AB1 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FFD0FAF3248BC750005FD94F /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FFD0FAF4248BC778005FD94F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +139,9 @@
 			dependencies = (
 			);
 			name = Portfolio;
+			packageProductDependencies = (
+				FFD0FAF6248BC828005FD94F /* ComposableArchitecture */,
+			);
 			productName = Portfolio;
 			productReference = FF90CC49248BC63200352AB1 /* Portfolio.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +170,9 @@
 				Base,
 			);
 			mainGroup = FF90CC40248BC63200352AB1;
+			packageReferences = (
+				FFD0FAF5248BC828005FD94F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			productRefGroup = FF90CC4A248BC63200352AB1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -149,6 +200,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD0FAF0248BC6DF005FD94F /* CoreDataStack.swift in Sources */,
 				FF90CC52248BC63200352AB1 /* Portfolio.xcdatamodeld in Sources */,
 				FF90CC4D248BC63200352AB1 /* AppDelegate.swift in Sources */,
 				FF90CC54248BC63200352AB1 /* ContentView.swift in Sources */,
@@ -346,6 +398,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FFD0FAF5248BC828005FD94F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FFD0FAF6248BC828005FD94F /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FFD0FAF5248BC828005FD94F /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FF90CC50248BC63200352AB1 /* Portfolio.xcdatamodeld */ = {
