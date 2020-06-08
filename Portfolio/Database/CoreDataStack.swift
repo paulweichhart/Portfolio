@@ -6,6 +6,7 @@
 //  Copyright © 2020 Paul Weichhart. All rights reserved.
 //
 
+import CoreData
 import Foundation
 
 final class CoreDataStack {
