@@ -7,47 +7,58 @@
 //
 
 import Combine
+import CoreData
 import Foundation
+import SwiftUI
 
 final class ViewModel: ObservableObject {
     
-    @Published var symbols: [NetworkSymbol] = [] {
+    @Published var symbols: [CoreDataSymbol] = []
+    @Published var searchText = "" {
         didSet {
-            storeSymbols()
+            symbols = coreDataStack.fetchSymbols(search: searchText)
         }
     }
     
-    private let network: Network
+    private let networkLayer: NetworkLayer
     private let coreDataStack: CoreDataStack
+    private var context: NSManagedObjectContext {
+        return coreDataStack.persistentContainer.viewContext
+    }
     
     private var subscriber: AnyCancellable?
     
-    init(network: Network, coreDataStack: CoreDataStack) {
+    init(networkLayer: NetworkLayer, coreDataStack: CoreDataStack) {
         self.coreDataStack = coreDataStack
-        self.network = network
+        self.networkLayer = networkLayer
         
         fetchSymbols()
     }
     
     private func fetchSymbols() {
-        
-        subscriber = network.fetchSymbols()
-            .sink(receiveCompletion: { completion in
-                switch completion {
+        coreDataStack.deleteSymbols()
+        fetchNetworkSymbols(completion: { [weak self] symbols in
+            guard let self = self else { return }
+            
+            self.symbols = symbols.map { symbol in
+                return CoreDataSymbol(networkSymbol: symbol, context: self.context)
+            }
+            self.coreDataStack.saveContext()
+        })
+    }
+    
+    private func fetchNetworkSymbols(completion: @escaping ([NetworkSymbol]) -> Void) {
+        subscriber = networkLayer.fetchSymbols()
+            .sink(receiveCompletion: { result in
+                switch result {
                 case .finished:
                     break
                 case let .failure(error):
                     print(error.localizedDescription)
+                    completion([])
                 }
-            }, receiveValue: { [weak self] value in
-                self?.symbols = value
-            })
-    }
-    
-    private func storeSymbols() {
-        symbols.forEach { symbol in
-            let _ = CoreDataSymbol(networkSymbol: symbol, context: coreDataStack.persistentContainer.viewContext)
-        }
-        coreDataStack.saveContext()
+            }, receiveValue: { symbols in
+                completion(symbols)
+        })
     }
 }

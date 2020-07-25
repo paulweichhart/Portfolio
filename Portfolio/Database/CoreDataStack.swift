@@ -11,6 +11,10 @@ import Foundation
 
 final class CoreDataStack {
     
+    private var context: NSManagedObjectContext {
+        return persistentContainer.viewContext
+    }
+    
     private(set) lazy var persistentContainer: NSPersistentCloudKitContainer = {
         /*
          The persistent container for the application. This implementation
@@ -41,7 +45,7 @@ final class CoreDataStack {
     // MARK: - Core Data Saving support
 
     func saveContext () {
-        let context = persistentContainer.viewContext
+        
         if context.hasChanges {
             do {
                 try context.save()
@@ -51,6 +55,37 @@ final class CoreDataStack {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+    
+    // MARK: - Symbols
+    
+    func fetchSymbols(search: String = "") -> [CoreDataSymbol] {
+        let request = NSFetchRequest<CoreDataSymbol>(entityName: CoreDataSymbol.entityName)
+        let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
+        request.sortDescriptors = [sortDescriptor]
+        if !search.isEmpty {
+            request.predicate = NSPredicate(format: "id contains[cd] %@ OR title contains[cd] %@", search, search)
+        }
+        let symbols: [CoreDataSymbol]
+        do {
+            symbols = try context.fetch(request)
+            print(symbols.count)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
+            return []
+        }
+        return symbols
+    }
+    
+    func deleteSymbols() {
+        let fetchRequest: NSFetchRequest<NSFetchRequestResult> = NSFetchRequest(entityName: CoreDataSymbol.entityName)
+        let deleteRequest = NSBatchDeleteRequest(fetchRequest: fetchRequest)
+
+        do {
+            try context.execute(deleteRequest)
+        } catch let error as NSError {
+            print("Could not fetch. \(error), \(error.userInfo)")
         }
     }
 }

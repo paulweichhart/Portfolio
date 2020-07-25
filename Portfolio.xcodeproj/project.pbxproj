@@ -7,25 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FF90CC4D248BC63200352AB1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CC4C248BC63200352AB1 /* AppDelegate.swift */; };
-		FF90CC4F248BC63200352AB1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CC4E248BC63200352AB1 /* SceneDelegate.swift */; };
+		FF3210E724CCCBA100FF0986 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3210E624CCCBA100FF0986 /* Portfolio.swift */; };
 		FF90CC52248BC63200352AB1 /* Portfolio.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF90CC50248BC63200352AB1 /* Portfolio.xcdatamodeld */; };
 		FF90CC54248BC63200352AB1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF90CC53248BC63200352AB1 /* ContentView.swift */; };
 		FF90CC56248BC63300352AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC55248BC63300352AB1 /* Assets.xcassets */; };
 		FF90CC59248BC63300352AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC58248BC63300352AB1 /* Preview Assets.xcassets */; };
 		FF90CC5C248BC63300352AB1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC5A248BC63300352AB1 /* LaunchScreen.storyboard */; };
 		FFC677A9248D09ED00D16F6F /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC677A8248D09ED00D16F6F /* ViewModel.swift */; };
-		FFCF31EF248D8CE0003E6264 /* CoreDataSymbol+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF31ED248D8CE0003E6264 /* CoreDataSymbol+CoreDataClass.swift */; };
-		FFCF31F0248D8CE0003E6264 /* CoreDataSymbol+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF31EE248D8CE0003E6264 /* CoreDataSymbol+CoreDataProperties.swift */; };
+		FFCF31EF248D8CE0003E6264 /* CoreDataSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFCF31ED248D8CE0003E6264 /* CoreDataSymbol.swift */; };
 		FFD0FAF0248BC6DF005FD94F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAEF248BC6DF005FD94F /* CoreDataStack.swift */; };
-		FFD0FAF9248BC9A4005FD94F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAF8248BC9A4005FD94F /* Network.swift */; };
+		FFD0FAF9248BC9A4005FD94F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAF8248BC9A4005FD94F /* NetworkLayer.swift */; };
 		FFD0FAFC248BD1A4005FD94F /* Stock.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAFB248BD1A4005FD94F /* Stock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF3210E624CCCBA100FF0986 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		FF90CC49248BC63200352AB1 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		FF90CC4C248BC63200352AB1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FF90CC4E248BC63200352AB1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		FF90CC51248BC63200352AB1 /* Portfolio.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Portfolio.xcdatamodel; sourceTree = "<group>"; };
 		FF90CC53248BC63200352AB1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF90CC55248BC63300352AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -33,10 +30,9 @@
 		FF90CC5B248BC63300352AB1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF90CC5D248BC63300352AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FFC677A8248D09ED00D16F6F /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
-		FFCF31ED248D8CE0003E6264 /* CoreDataSymbol+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataSymbol+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FFCF31EE248D8CE0003E6264 /* CoreDataSymbol+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreDataSymbol+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FFCF31ED248D8CE0003E6264 /* CoreDataSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataSymbol.swift; sourceTree = "<group>"; };
 		FFD0FAEF248BC6DF005FD94F /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
-		FFD0FAF8248BC9A4005FD94F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		FFD0FAF8248BC9A4005FD94F /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
 		FFD0FAFB248BD1A4005FD94F /* Stock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,7 +66,7 @@
 		FF90CC4B248BC63200352AB1 /* Portfolio */ = {
 			isa = PBXGroup;
 			children = (
-				FFD0FAF1248BC73C005FD94F /* AppDelegate */,
+				FF3210E624CCCBA100FF0986 /* Portfolio.swift */,
 				FFD0FAFA248BCB81005FD94F /* Model */,
 				FFD0FAF4248BC778005FD94F /* Network */,
 				FFD0FAEE248BC6B9005FD94F /* Database */,
@@ -101,15 +97,6 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
-		FFD0FAF1248BC73C005FD94F /* AppDelegate */ = {
-			isa = PBXGroup;
-			children = (
-				FF90CC4C248BC63200352AB1 /* AppDelegate.swift */,
-				FF90CC4E248BC63200352AB1 /* SceneDelegate.swift */,
-			);
-			path = AppDelegate;
-			sourceTree = "<group>";
-		};
 		FFD0FAF2248BC748005FD94F /* View */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,7 +116,7 @@
 		FFD0FAF4248BC778005FD94F /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				FFD0FAF8248BC9A4005FD94F /* Network.swift */,
+				FFD0FAF8248BC9A4005FD94F /* NetworkLayer.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -138,8 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				FFD0FAFB248BD1A4005FD94F /* Stock.swift */,
-				FFCF31ED248D8CE0003E6264 /* CoreDataSymbol+CoreDataClass.swift */,
-				FFCF31EE248D8CE0003E6264 /* CoreDataSymbol+CoreDataProperties.swift */,
+				FFCF31ED248D8CE0003E6264 /* CoreDataSymbol.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,7 +159,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Paul Weichhart";
 				TargetAttributes = {
 					FF90CC48248BC63200352AB1 = {
@@ -221,13 +207,11 @@
 			files = (
 				FFD0FAF0248BC6DF005FD94F /* CoreDataStack.swift in Sources */,
 				FF90CC52248BC63200352AB1 /* Portfolio.xcdatamodeld in Sources */,
-				FFCF31EF248D8CE0003E6264 /* CoreDataSymbol+CoreDataClass.swift in Sources */,
-				FFD0FAF9248BC9A4005FD94F /* Network.swift in Sources */,
-				FF90CC4D248BC63200352AB1 /* AppDelegate.swift in Sources */,
+				FFCF31EF248D8CE0003E6264 /* CoreDataSymbol.swift in Sources */,
+				FFD0FAF9248BC9A4005FD94F /* NetworkLayer.swift in Sources */,
+				FF3210E724CCCBA100FF0986 /* Portfolio.swift in Sources */,
 				FF90CC54248BC63200352AB1 /* ContentView.swift in Sources */,
-				FF90CC4F248BC63200352AB1 /* SceneDelegate.swift in Sources */,
 				FFC677A9248D09ED00D16F6F /* ViewModel.swift in Sources */,
-				FFCF31F0248D8CE0003E6264 /* CoreDataSymbol+CoreDataProperties.swift in Sources */,
 				FFD0FAFC248BD1A4005FD94F /* Stock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,6 +256,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -296,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -333,6 +318,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -351,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -371,13 +357,13 @@
 				DEVELOPMENT_TEAM = M5E86B9E63;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Portfolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulweichhart.Portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -391,13 +377,13 @@
 				DEVELOPMENT_TEAM = M5E86B9E63;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Portfolio/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.paulweichhart.Portfolio;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

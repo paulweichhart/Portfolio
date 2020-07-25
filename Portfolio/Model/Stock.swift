@@ -28,8 +28,15 @@ struct Watchlist {
     let tradedSince: Date
 }
 
-//struct Portfolio {
-//    
-//    let portfolio: [Stock]
-//    let tradedSince: Date
-//}
+struct NetworkSymbol: Codable {
+    
+    let title: String
+    let display: String
+    let symbol: String
+    
+    enum CodingKeys: String, CodingKey {
+        case title = "description"
+        case display = "displaySymbol"
+        case symbol
+    }
+}

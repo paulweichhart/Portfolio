@@ -2,7 +2,7 @@
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19F101" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="YES" userDefinedModelVersionIdentifier="">
     <entity name="CoreDataSymbol" representedClassName="CoreDataSymbol" syncable="YES">
         <attribute name="display" optional="YES" attributeType="String"/>
-        <attribute name="symbol" optional="YES" attributeType="String"/>
+        <attribute name="id" attributeType="String" defaultValueString="&quot;&quot;"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>
     <elements>
