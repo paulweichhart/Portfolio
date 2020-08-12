@@ -30,6 +30,7 @@ struct Watchlist {
 
 struct NetworkSymbol: Codable {
     
+    let id = UUID()
     let title: String
     let display: String
     let symbol: String

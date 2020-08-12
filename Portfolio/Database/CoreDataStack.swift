@@ -64,13 +64,14 @@ final class CoreDataStack {
         let request = NSFetchRequest<CoreDataSymbol>(entityName: CoreDataSymbol.entityName)
         let sortDescriptor = NSSortDescriptor(key: "title", ascending: true)
         request.sortDescriptors = [sortDescriptor]
+        request.returnsObjectsAsFaults = false
+        request.fetchBatchSize = 20
         if !search.isEmpty {
             request.predicate = NSPredicate(format: "id contains[cd] %@ OR title contains[cd] %@", search, search)
         }
         let symbols: [CoreDataSymbol]
         do {
             symbols = try context.fetch(request)
-            print(symbols.count)
         } catch let error as NSError {
             print("Could not fetch. \(error), \(error.userInfo)")
             return []

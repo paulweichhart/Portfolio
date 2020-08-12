@@ -10,7 +10,8 @@ import SwiftUI
 
 struct ListView: View {
     
-    let highlight = Color(.displayP3, red: 30/255, green: 186/255, blue: 208/255, opacity: 1)
+    private let highlight = Color(.displayP3, red: 30/255, green: 186/255, blue: 208/255, opacity: 1)
+
     @StateObject var viewModel: ViewModel
     
     init(viewModel: ViewModel) {
@@ -142,12 +143,12 @@ extension View {
 
 struct PortfolioView: View {
     
-    let symbols: [CoreDataSymbol]
+    var symbols: [NetworkSymbol]
     
     var body: some View {
         ForEach(symbols, id: \.id) { symbol in
             HStack {
-                Text(symbol.id)
+                Text(symbol.symbol)
             }.padding(EdgeInsets(top: 8, leading: 8, bottom: 8, trailing: 8))
         }
     }

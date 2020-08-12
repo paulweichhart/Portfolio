@@ -13,52 +13,34 @@ import SwiftUI
 
 final class ViewModel: ObservableObject {
     
-    @Published var symbols: [CoreDataSymbol] = []
-    @Published var searchText = "" {
-        didSet {
-            symbols = coreDataStack.fetchSymbols(search: searchText)
-        }
-    }
+    @Published var symbols: [NetworkSymbol] = []
+    @Published var searchText: String = ""
     
     private let networkLayer: NetworkLayer
     private let coreDataStack: CoreDataStack
     private var context: NSManagedObjectContext {
         return coreDataStack.persistentContainer.viewContext
     }
-    
-    private var subscriber: AnyCancellable?
+    private var cancellable = Set<AnyCancellable>()
     
     init(networkLayer: NetworkLayer, coreDataStack: CoreDataStack) {
         self.coreDataStack = coreDataStack
         self.networkLayer = networkLayer
-        
-        fetchSymbols()
+
+        subscribe()
     }
     
-    private func fetchSymbols() {
-        coreDataStack.deleteSymbols()
-        fetchNetworkSymbols(completion: { [weak self] symbols in
-            guard let self = self else { return }
-            
-            self.symbols = symbols.map { symbol in
-                return CoreDataSymbol(networkSymbol: symbol, context: self.context)
-            }
-            self.coreDataStack.saveContext()
-        })
-    }
-    
-    private func fetchNetworkSymbols(completion: @escaping ([NetworkSymbol]) -> Void) {
-        subscriber = networkLayer.fetchSymbols()
-            .sink(receiveCompletion: { result in
-                switch result {
-                case .finished:
-                    break
-                case let .failure(error):
-                    print(error.localizedDescription)
-                    completion([])
+    private func subscribe() {
+        Publishers.CombineLatest(networkLayer.symbolsSubject, $searchText)
+            .map { symbols, text in
+                let search = text.lowercased()
+                return search.count < 3 ? symbols : symbols.filter { symbol in
+                    symbol.display.lowercased().contains(search) ||
+                        symbol.symbol.lowercased().contains(search) ||
+                        symbol.title.lowercased().contains(search)
                 }
-            }, receiveValue: { symbols in
-                completion(symbols)
-        })
+            }
+            .eraseToAnyPublisher()
+            .assign(to: &$symbols)
     }
 }
