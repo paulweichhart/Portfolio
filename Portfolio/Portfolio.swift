@@ -8,18 +8,17 @@
 
 import SwiftUI
 
-@available(iOS 14.0, *)
 @main
-struct Portfolio: App {
+struct ExampleApp: App {
     
-    private let coreDataStack = CoreDataStack()
     private let networkLayer = NetworkLayer()
     
     var body: some Scene {
         WindowGroup {
-            ListView(viewModel: ViewModel(networkLayer: networkLayer,
-                                          coreDataStack: coreDataStack))
+            let coordinator = Coordinator(networkLayer: networkLayer)
+            
+            let root = coordinator.navigate(to: .rootView)
+            root.environmentObject(coordinator)
         }
     }
 }
-
