@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF25D5A1252F9EAB00F76BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25D5A0252F9EAB00F76BE5 /* Assets.xcassets */; };
+		FF25D5A8252F9EAB00F76BE5 /* WatchPortfolio Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF25D5A7252F9EAB00F76BE5 /* WatchPortfolio Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF25D5AD252F9EAC00F76BE5 /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5AC252F9EAC00F76BE5 /* PortfolioApp.swift */; };
+		FF25D5AF252F9EAC00F76BE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5AE252F9EAC00F76BE5 /* ContentView.swift */; };
+		FF25D5B1252F9EAC00F76BE5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5B0252F9EAC00F76BE5 /* NotificationController.swift */; };
+		FF25D5B3252F9EAC00F76BE5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5B2252F9EAC00F76BE5 /* NotificationView.swift */; };
+		FF25D5B5252F9EAC00F76BE5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5B4252F9EAC00F76BE5 /* ComplicationController.swift */; };
+		FF25D5B7252F9EAC00F76BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25D5B6252F9EAC00F76BE5 /* Assets.xcassets */; };
+		FF25D5BA252F9EAC00F76BE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25D5B9252F9EAC00F76BE5 /* Preview Assets.xcassets */; };
+		FF25D5BF252F9EAC00F76BE5 /* WatchPortfolio.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FF25D59E252F9EAB00F76BE5 /* WatchPortfolio.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FF25D5CB252F9F1C00F76BE5 /* Symbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04934252BAF8B0075BB79 /* Symbol.swift */; };
 		FF3210E724CCCBA100FF0986 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3210E624CCCBA100FF0986 /* Portfolio.swift */; };
 		FF90CC56248BC63300352AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC55248BC63300352AB1 /* Assets.xcassets */; };
 		FF90CC59248BC63300352AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC58248BC63300352AB1 /* Preview Assets.xcassets */; };
@@ -22,7 +33,62 @@
 		FFD0FAF9248BC9A4005FD94F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAF8248BC9A4005FD94F /* NetworkLayer.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		FF25D5A9252F9EAB00F76BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF90CC41248BC63200352AB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF25D5A6252F9EAB00F76BE5;
+			remoteInfo = "WatchPortfolio Extension";
+		};
+		FF25D5BD252F9EAC00F76BE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF90CC41248BC63200352AB1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF25D59D252F9EAB00F76BE5;
+			remoteInfo = WatchPortfolio;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FF25D5C0252F9EAC00F76BE5 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				FF25D5BF252F9EAC00F76BE5 /* WatchPortfolio.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF25D5C3252F9EAC00F76BE5 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				FF25D5A8252F9EAB00F76BE5 /* WatchPortfolio Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		FF25D59E252F9EAB00F76BE5 /* WatchPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF25D5A0252F9EAB00F76BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF25D5A2252F9EAB00F76BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF25D5A7252F9EAB00F76BE5 /* WatchPortfolio Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchPortfolio Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF25D5AC252F9EAC00F76BE5 /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
+		FF25D5AE252F9EAC00F76BE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FF25D5B0252F9EAC00F76BE5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		FF25D5B2252F9EAC00F76BE5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
+		FF25D5B4252F9EAC00F76BE5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		FF25D5B6252F9EAC00F76BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF25D5B9252F9EAC00F76BE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF25D5BB252F9EAC00F76BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF25D5BC252F9EAC00F76BE5 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		FF3210E624CCCBA100FF0986 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		FF90CC49248BC63200352AB1 /* Portfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Portfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF90CC55248BC63300352AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -41,6 +107,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		FF25D5A4252F9EAB00F76BE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF90CC46248BC63200352AB1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -51,10 +124,61 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF25D59F252F9EAB00F76BE5 /* WatchPortfolio */ = {
+			isa = PBXGroup;
+			children = (
+				FF25D5A0252F9EAB00F76BE5 /* Assets.xcassets */,
+				FF25D5A2252F9EAB00F76BE5 /* Info.plist */,
+			);
+			path = WatchPortfolio;
+			sourceTree = "<group>";
+		};
+		FF25D5AB252F9EAC00F76BE5 /* WatchPortfolio Extension */ = {
+			isa = PBXGroup;
+			children = (
+				FF25D5D0252F9FC300F76BE5 /* ShareView */,
+				FF25D5CF252F9FB800F76BE5 /* Views */,
+				FF25D5AC252F9EAC00F76BE5 /* PortfolioApp.swift */,
+				FF25D5AE252F9EAC00F76BE5 /* ContentView.swift */,
+				FF25D5B0252F9EAC00F76BE5 /* NotificationController.swift */,
+				FF25D5B2252F9EAC00F76BE5 /* NotificationView.swift */,
+				FF25D5B4252F9EAC00F76BE5 /* ComplicationController.swift */,
+				FF25D5B6252F9EAC00F76BE5 /* Assets.xcassets */,
+				FF25D5BB252F9EAC00F76BE5 /* Info.plist */,
+				FF25D5BC252F9EAC00F76BE5 /* PushNotificationPayload.apns */,
+				FF25D5B8252F9EAC00F76BE5 /* Preview Content */,
+			);
+			path = "WatchPortfolio Extension";
+			sourceTree = "<group>";
+		};
+		FF25D5B8252F9EAC00F76BE5 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FF25D5B9252F9EAC00F76BE5 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF25D5CF252F9FB800F76BE5 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FF25D5D0252F9FC300F76BE5 /* ShareView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ShareView;
+			sourceTree = "<group>";
+		};
 		FF90CC40248BC63200352AB1 = {
 			isa = PBXGroup;
 			children = (
 				FF90CC4B248BC63200352AB1 /* Portfolio */,
+				FF25D59F252F9EAB00F76BE5 /* WatchPortfolio */,
+				FF25D5AB252F9EAC00F76BE5 /* WatchPortfolio Extension */,
 				FF90CC4A248BC63200352AB1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -63,6 +187,8 @@
 			isa = PBXGroup;
 			children = (
 				FF90CC49248BC63200352AB1 /* Portfolio.app */,
+				FF25D59E252F9EAB00F76BE5 /* WatchPortfolio.app */,
+				FF25D5A7252F9EAB00F76BE5 /* WatchPortfolio Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -147,6 +273,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		FF25D59D252F9EAB00F76BE5 /* WatchPortfolio */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF25D5C7252F9EAC00F76BE5 /* Build configuration list for PBXNativeTarget "WatchPortfolio" */;
+			buildPhases = (
+				FF25D59C252F9EAB00F76BE5 /* Resources */,
+				FF25D5C3252F9EAC00F76BE5 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF25D5AA252F9EAB00F76BE5 /* PBXTargetDependency */,
+			);
+			name = WatchPortfolio;
+			productName = WatchPortfolio;
+			productReference = FF25D59E252F9EAB00F76BE5 /* WatchPortfolio.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		FF25D5A6252F9EAB00F76BE5 /* WatchPortfolio Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF25D5C6252F9EAC00F76BE5 /* Build configuration list for PBXNativeTarget "WatchPortfolio Extension" */;
+			buildPhases = (
+				FF25D5A3252F9EAB00F76BE5 /* Sources */,
+				FF25D5A4252F9EAB00F76BE5 /* Frameworks */,
+				FF25D5A5252F9EAB00F76BE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WatchPortfolio Extension";
+			productName = "WatchPortfolio Extension";
+			productReference = FF25D5A7252F9EAB00F76BE5 /* WatchPortfolio Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
 		FF90CC48248BC63200352AB1 /* Portfolio */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = FF90CC60248BC63300352AB1 /* Build configuration list for PBXNativeTarget "Portfolio" */;
@@ -154,10 +314,12 @@
 				FF90CC45248BC63200352AB1 /* Sources */,
 				FF90CC46248BC63200352AB1 /* Frameworks */,
 				FF90CC47248BC63200352AB1 /* Resources */,
+				FF25D5C0252F9EAC00F76BE5 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				FF25D5BE252F9EAC00F76BE5 /* PBXTargetDependency */,
 			);
 			name = Portfolio;
 			packageProductDependencies = (
@@ -172,10 +334,16 @@
 		FF90CC41248BC63200352AB1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1140;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Paul Weichhart";
 				TargetAttributes = {
+					FF25D59D252F9EAB00F76BE5 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					FF25D5A6252F9EAB00F76BE5 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 					FF90CC48248BC63200352AB1 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
@@ -197,11 +365,30 @@
 			projectRoot = "";
 			targets = (
 				FF90CC48248BC63200352AB1 /* Portfolio */,
+				FF25D59D252F9EAB00F76BE5 /* WatchPortfolio */,
+				FF25D5A6252F9EAB00F76BE5 /* WatchPortfolio Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		FF25D59C252F9EAB00F76BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25D5A1252F9EAB00F76BE5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF25D5A5252F9EAB00F76BE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25D5BA252F9EAC00F76BE5 /* Preview Assets.xcassets in Resources */,
+				FF25D5B7252F9EAC00F76BE5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF90CC47248BC63200352AB1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -214,6 +401,19 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		FF25D5A3252F9EAB00F76BE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF25D5B1252F9EAC00F76BE5 /* NotificationController.swift in Sources */,
+				FF25D5AF252F9EAC00F76BE5 /* ContentView.swift in Sources */,
+				FF25D5B5252F9EAC00F76BE5 /* ComplicationController.swift in Sources */,
+				FF25D5AD252F9EAC00F76BE5 /* PortfolioApp.swift in Sources */,
+				FF25D5B3252F9EAC00F76BE5 /* NotificationView.swift in Sources */,
+				FF25D5CB252F9F1C00F76BE5 /* Symbol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		FF90CC45248BC63200352AB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -234,7 +434,106 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		FF25D5AA252F9EAB00F76BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF25D5A6252F9EAB00F76BE5 /* WatchPortfolio Extension */;
+			targetProxy = FF25D5A9252F9EAB00F76BE5 /* PBXContainerItemProxy */;
+		};
+		FF25D5BE252F9EAC00F76BE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF25D59D252F9EAB00F76BE5 /* WatchPortfolio */;
+			targetProxy = FF25D5BD252F9EAC00F76BE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		FF25D5C1252F9EAC00F76BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5E86B9E63;
+				IBSC_MODULE = WatchPortfolio_Extension;
+				INFOPLIST_FILE = WatchPortfolio/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulweichhart.Portfolio.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		FF25D5C2252F9EAC00F76BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M5E86B9E63;
+				IBSC_MODULE = WatchPortfolio_Extension;
+				INFOPLIST_FILE = WatchPortfolio/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulweichhart.Portfolio.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
+		FF25D5C4252F9EAC00F76BE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchPortfolio Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchPortfolio Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulweichhart.Portfolio.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Debug;
+		};
+		FF25D5C5252F9EAC00F76BE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"WatchPortfolio Extension/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "WatchPortfolio Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.paulweichhart.Portfolio.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 7.0;
+			};
+			name = Release;
+		};
 		FF90CC5E248BC63300352AB1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -396,6 +695,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		FF25D5C6252F9EAC00F76BE5 /* Build configuration list for PBXNativeTarget "WatchPortfolio Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF25D5C4252F9EAC00F76BE5 /* Debug */,
+				FF25D5C5252F9EAC00F76BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF25D5C7252F9EAC00F76BE5 /* Build configuration list for PBXNativeTarget "WatchPortfolio" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF25D5C1252F9EAC00F76BE5 /* Debug */,
+				FF25D5C2252F9EAC00F76BE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		FF90CC44248BC63200352AB1 /* Build configuration list for PBXProject "Portfolio" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
