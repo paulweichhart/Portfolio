@@ -3,7 +3,7 @@
 This is a companion Repository of the Swift, SwiftUI & Combine Articles posted on [www.paulweichhart.com](https://www.paulweichhart.com)
 The project grew quite quickly & gists were getting hard to follow — that's why I created a separate Project to make the code more readable. 
 
-This project is just a Playground for getting started with Combine & SwiftUI — please refer to the Blog Posts to get more insights on the Design & Code decisions.
+This project is just a Playground for getting started with Combine & SwiftUI — please refer to the Blog Posts to get more insights on the Design & Code decisions. I tried to avoid using `Never`, Force unwrapping variables & show appropriate Error Messages to the User.
 
 ![https://www.paulweichhart.com/img/mvvm.png "Simulator Screenshot of the Portfolio App"](https://www.paulweichhart.com/img/mvvm.png "Simulator Screenshot of the Portfolio App")
 
