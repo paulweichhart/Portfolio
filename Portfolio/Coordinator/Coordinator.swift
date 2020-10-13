@@ -34,6 +34,7 @@ final class Coordinator: ObservableObject {
                 
             case .rootView:
                 let viewModel = PortfolioViewModel(networkLayer: networkLayer)
+                isWatch ? PortfolioWatchView
                 PortfolioView(viewModel: viewModel)
             }
         }

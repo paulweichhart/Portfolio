@@ -9,7 +9,7 @@
 import SwiftUI
 
 @main
-struct ExampleApp: App {
+struct Portfolio: App {
     
     private let networkLayer = NetworkLayer()
     

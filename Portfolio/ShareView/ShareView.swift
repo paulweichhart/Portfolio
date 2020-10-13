@@ -13,6 +13,15 @@ struct ShareView: View {
     
     @StateObject private var viewModel: ShareViewModel
     
+    var isAppleWatch: Bool {
+        #if os(watchOS)
+            return true
+        #else
+            return false
+        #endif
+
+    }
+    
     init(viewModel: ShareViewModel) {
         _viewModel = StateObject(wrappedValue: viewModel)
     }
@@ -21,7 +30,7 @@ struct ShareView: View {
         VStack(alignment: .leading) {
         }
         .navigationTitle(viewModel.symbol.title)
-        .navigationBarTitleDisplayMode(.large)
+//      .navigationBarTitleDisplayMode(.large)
         .padding(EdgeInsets(top: 0, leading: 16.0, bottom: 0, trailing: 16.0))
     }
 }

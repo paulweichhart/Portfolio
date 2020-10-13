@@ -9,14 +9,16 @@
 import SwiftUI
 
 @main
-struct PortfolioApp: App {
+struct PortfolioWatchApp: App {
+    
+    private let networkLayer = NetworkLayer()
+    
     @SceneBuilder var body: some Scene {
         WindowGroup {
-            NavigationView {
-                ContentView()
-            }
+            let coordinator = Coordinator(networkLayer: networkLayer)
+            
+            let root = coordinator.navigate(to: .rootView)
+            root.environmentObject(coordinator)
         }
-
-        WKNotificationScene(controller: NotificationController.self, category: "myCategory")
     }
 }

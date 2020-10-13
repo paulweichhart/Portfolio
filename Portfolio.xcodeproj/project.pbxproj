@@ -7,13 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF0476C625349F8300F9B422 /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAF8248BC9A4005FD94F /* NetworkLayer.swift */; };
+		FF0476CA25349F8C00F9B422 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04938252BAFAE0075BB79 /* Coordinator.swift */; };
+		FF0476CE25349F8F00F9B422 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04947252BB0D60075BB79 /* Error.swift */; };
+		FF0476D225349F9500F9B422 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04928252BAECB0075BB79 /* PortfolioView.swift */; };
+		FF0476D625349F9700F9B422 /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC677A8248D09ED00D16F6F /* PortfolioViewModel.swift */; };
+		FF0476DA25349F9B00F9B422 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0492B252BAED70075BB79 /* ShareView.swift */; };
+		FF0476DE25349F9D00F9B422 /* ShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0492F252BAF300075BB79 /* ShareViewModel.swift */; };
+		FF0476E225349FA100F9B422 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04943252BB03E0075BB79 /* ErrorView.swift */; };
+		FF0476E625349FA300F9B422 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04940252BB0220075BB79 /* LoadingView.swift */; };
+		FF0476EE2534A3D400F9B422 /* PortfolioWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0476ED2534A3D400F9B422 /* PortfolioWatchView.swift */; };
+		FF0476F72534A6B500F9B422 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0476F62534A6B500F9B422 /* Utility.swift */; };
+		FF0476F82534A6B500F9B422 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0476F62534A6B500F9B422 /* Utility.swift */; };
 		FF25D5A1252F9EAB00F76BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25D5A0252F9EAB00F76BE5 /* Assets.xcassets */; };
 		FF25D5A8252F9EAB00F76BE5 /* WatchPortfolio Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FF25D5A7252F9EAB00F76BE5 /* WatchPortfolio Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		FF25D5AD252F9EAC00F76BE5 /* PortfolioApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5AC252F9EAC00F76BE5 /* PortfolioApp.swift */; };
-		FF25D5AF252F9EAC00F76BE5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5AE252F9EAC00F76BE5 /* ContentView.swift */; };
-		FF25D5B1252F9EAC00F76BE5 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5B0252F9EAC00F76BE5 /* NotificationController.swift */; };
-		FF25D5B3252F9EAC00F76BE5 /* NotificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5B2252F9EAC00F76BE5 /* NotificationView.swift */; };
-		FF25D5B5252F9EAC00F76BE5 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF25D5B4252F9EAC00F76BE5 /* ComplicationController.swift */; };
 		FF25D5B7252F9EAC00F76BE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25D5B6252F9EAC00F76BE5 /* Assets.xcassets */; };
 		FF25D5BA252F9EAC00F76BE5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF25D5B9252F9EAC00F76BE5 /* Preview Assets.xcassets */; };
 		FF25D5BF252F9EAC00F76BE5 /* WatchPortfolio.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = FF25D59E252F9EAB00F76BE5 /* WatchPortfolio.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -76,15 +84,13 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		FF0476ED2534A3D400F9B422 /* PortfolioWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioWatchView.swift; sourceTree = "<group>"; };
+		FF0476F62534A6B500F9B422 /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		FF25D59E252F9EAB00F76BE5 /* WatchPortfolio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WatchPortfolio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF25D5A0252F9EAB00F76BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF25D5A2252F9EAB00F76BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF25D5A7252F9EAB00F76BE5 /* WatchPortfolio Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WatchPortfolio Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF25D5AC252F9EAC00F76BE5 /* PortfolioApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioApp.swift; sourceTree = "<group>"; };
-		FF25D5AE252F9EAC00F76BE5 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		FF25D5B0252F9EAC00F76BE5 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
-		FF25D5B2252F9EAC00F76BE5 /* NotificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationView.swift; sourceTree = "<group>"; };
-		FF25D5B4252F9EAC00F76BE5 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
 		FF25D5B6252F9EAC00F76BE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF25D5B9252F9EAC00F76BE5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF25D5BB252F9EAC00F76BE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -124,6 +130,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FF0476F52534A69700F9B422 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FF0476F62534A6B500F9B422 /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
 		FF25D59F252F9EAB00F76BE5 /* WatchPortfolio */ = {
 			isa = PBXGroup;
 			children = (
@@ -137,12 +151,8 @@
 			isa = PBXGroup;
 			children = (
 				FF25D5D0252F9FC300F76BE5 /* ShareView */,
-				FF25D5CF252F9FB800F76BE5 /* Views */,
+				FF25D5CF252F9FB800F76BE5 /* PortfolioView */,
 				FF25D5AC252F9EAC00F76BE5 /* PortfolioApp.swift */,
-				FF25D5AE252F9EAC00F76BE5 /* ContentView.swift */,
-				FF25D5B0252F9EAC00F76BE5 /* NotificationController.swift */,
-				FF25D5B2252F9EAC00F76BE5 /* NotificationView.swift */,
-				FF25D5B4252F9EAC00F76BE5 /* ComplicationController.swift */,
 				FF25D5B6252F9EAC00F76BE5 /* Assets.xcassets */,
 				FF25D5BB252F9EAC00F76BE5 /* Info.plist */,
 				FF25D5BC252F9EAC00F76BE5 /* PushNotificationPayload.apns */,
@@ -159,11 +169,12 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		FF25D5CF252F9FB800F76BE5 /* Views */ = {
+		FF25D5CF252F9FB800F76BE5 /* PortfolioView */ = {
 			isa = PBXGroup;
 			children = (
+				FF0476ED2534A3D400F9B422 /* PortfolioWatchView.swift */,
 			);
-			path = Views;
+			path = PortfolioView;
 			sourceTree = "<group>";
 		};
 		FF25D5D0252F9FC300F76BE5 /* ShareView */ = {
@@ -202,6 +213,7 @@
 				FFD0FAF4248BC778005FD94F /* Network */,
 				FFD0FAF2248BC748005FD94F /* PortfolioView */,
 				FFB04932252BAF3D0075BB79 /* ShareView */,
+				FF0476F52534A69700F9B422 /* Utility */,
 				FFB0493C252BAFEB0075BB79 /* Views */,
 				FF90CC55248BC63300352AB1 /* Assets.xcassets */,
 				FF90CC5D248BC63300352AB1 /* Info.plist */,
@@ -405,12 +417,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF25D5B1252F9EAC00F76BE5 /* NotificationController.swift in Sources */,
-				FF25D5AF252F9EAC00F76BE5 /* ContentView.swift in Sources */,
-				FF25D5B5252F9EAC00F76BE5 /* ComplicationController.swift in Sources */,
+				FF0476C625349F8300F9B422 /* NetworkLayer.swift in Sources */,
+				FF0476D225349F9500F9B422 /* PortfolioView.swift in Sources */,
+				FF0476CA25349F8C00F9B422 /* Coordinator.swift in Sources */,
 				FF25D5AD252F9EAC00F76BE5 /* PortfolioApp.swift in Sources */,
-				FF25D5B3252F9EAC00F76BE5 /* NotificationView.swift in Sources */,
+				FF0476E625349FA300F9B422 /* LoadingView.swift in Sources */,
+				FF0476D625349F9700F9B422 /* PortfolioViewModel.swift in Sources */,
+				FF0476DA25349F9B00F9B422 /* ShareView.swift in Sources */,
+				FF0476F82534A6B500F9B422 /* Utility.swift in Sources */,
+				FF0476EE2534A3D400F9B422 /* PortfolioWatchView.swift in Sources */,
+				FF0476CE25349F8F00F9B422 /* Error.swift in Sources */,
+				FF0476DE25349F9D00F9B422 /* ShareViewModel.swift in Sources */,
 				FF25D5CB252F9F1C00F76BE5 /* Symbol.swift in Sources */,
+				FF0476E225349FA100F9B422 /* ErrorView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,6 +445,7 @@
 				FFD0FAF9248BC9A4005FD94F /* NetworkLayer.swift in Sources */,
 				FF3210E724CCCBA100FF0986 /* Portfolio.swift in Sources */,
 				FFB04935252BAF8B0075BB79 /* Symbol.swift in Sources */,
+				FF0476F72534A6B500F9B422 /* Utility.swift in Sources */,
 				FFC677A9248D09ED00D16F6F /* PortfolioViewModel.swift in Sources */,
 				FFB04929252BAECB0075BB79 /* PortfolioView.swift in Sources */,
 				FFB04944252BB03E0075BB79 /* ErrorView.swift in Sources */,

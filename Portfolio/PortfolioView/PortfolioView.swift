@@ -39,7 +39,7 @@ struct PortfolioView: View {
                 }
             }
             .navigationTitle("Portfolio")
-            .navigationBarTitleDisplayMode(.large)
+//            .navigationBarTitleDisplayMode(.large)
             .padding(EdgeInsets(top: 0, leading: 8.0, bottom: 0, trailing: 8.0))
             .navigationBarHidden(true)
         }
@@ -87,4 +87,3 @@ struct PortfolioList: View {
         .listStyle(PlainListStyle())
     }
 }
-
