@@ -29,6 +29,8 @@
 		FF3210E724CCCBA100FF0986 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF3210E624CCCBA100FF0986 /* Portfolio.swift */; };
 		FF90CC56248BC63300352AB1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC55248BC63300352AB1 /* Assets.xcassets */; };
 		FF90CC59248BC63300352AB1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF90CC58248BC63300352AB1 /* Preview Assets.xcassets */; };
+		FFA5E779253A48B00078CFA4 /* Coordinator+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5E778253A48B00078CFA4 /* Coordinator+Extension.swift */; };
+		FFA5E784253A4C800078CFA4 /* Coordinator+WatchExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5E783253A4C800078CFA4 /* Coordinator+WatchExtension.swift */; };
 		FFB04929252BAECB0075BB79 /* PortfolioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04928252BAECB0075BB79 /* PortfolioView.swift */; };
 		FFB0492C252BAED70075BB79 /* ShareView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0492B252BAED70075BB79 /* ShareView.swift */; };
 		FFB04930252BAF300075BB79 /* ShareViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB0492F252BAF300075BB79 /* ShareViewModel.swift */; };
@@ -39,8 +41,6 @@
 		FFB04948252BB0D60075BB79 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04947252BB0D60075BB79 /* Error.swift */; };
 		FFC677A9248D09ED00D16F6F /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC677A8248D09ED00D16F6F /* PortfolioViewModel.swift */; };
 		FFD0FAF9248BC9A4005FD94F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAF8248BC9A4005FD94F /* NetworkLayer.swift */; };
-		FFFCD270253A391E0063C7DD /* PortfolioWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0476ED2534A3D400F9B422 /* PortfolioWatchView.swift */; };
-		FFFCD275253A3C530063C7DD /* ShareWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFCD274253A3C530063C7DD /* ShareWatchView.swift */; };
 		FFFCD276253A3C530063C7DD /* ShareWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFCD274253A3C530063C7DD /* ShareWatchView.swift */; };
 /* End PBXBuildFile section */
 
@@ -103,6 +103,8 @@
 		FF90CC55248BC63300352AB1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF90CC58248BC63300352AB1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FF90CC5D248BC63300352AB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFA5E778253A48B00078CFA4 /* Coordinator+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+Extension.swift"; sourceTree = "<group>"; };
+		FFA5E783253A4C800078CFA4 /* Coordinator+WatchExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Coordinator+WatchExtension.swift"; sourceTree = "<group>"; };
 		FFB04928252BAECB0075BB79 /* PortfolioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioView.swift; sourceTree = "<group>"; };
 		FFB0492B252BAED70075BB79 /* ShareView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareView.swift; sourceTree = "<group>"; };
 		FFB0492F252BAF300075BB79 /* ShareViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewModel.swift; sourceTree = "<group>"; };
@@ -154,9 +156,10 @@
 		FF25D5AB252F9EAC00F76BE5 /* WatchPortfolio Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FF25D5AC252F9EAC00F76BE5 /* PortfolioApp.swift */,
+				FFA5E788253A4C850078CFA4 /* Coordinator */,
 				FF25D5D0252F9FC300F76BE5 /* ShareView */,
 				FF25D5CF252F9FB800F76BE5 /* PortfolioView */,
-				FF25D5AC252F9EAC00F76BE5 /* PortfolioApp.swift */,
 				FF25D5B6252F9EAC00F76BE5 /* Assets.xcassets */,
 				FF25D5BB252F9EAC00F76BE5 /* Info.plist */,
 				FF25D5BC252F9EAC00F76BE5 /* PushNotificationPayload.apns */,
@@ -235,6 +238,14 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		FFA5E788253A4C850078CFA4 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				FFA5E783253A4C800078CFA4 /* Coordinator+WatchExtension.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		FFB04932252BAF3D0075BB79 /* ShareView */ = {
 			isa = PBXGroup;
 			children = (
@@ -248,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				FFB04938252BAFAE0075BB79 /* Coordinator.swift */,
+				FFA5E778253A48B00078CFA4 /* Coordinator+Extension.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -424,6 +436,7 @@
 			files = (
 				FF0476C625349F8300F9B422 /* NetworkLayer.swift in Sources */,
 				FF0476D225349F9500F9B422 /* PortfolioView.swift in Sources */,
+				FFA5E784253A4C800078CFA4 /* Coordinator+WatchExtension.swift in Sources */,
 				FF0476CA25349F8C00F9B422 /* Coordinator.swift in Sources */,
 				FF25D5AD252F9EAC00F76BE5 /* PortfolioApp.swift in Sources */,
 				FF0476E625349FA300F9B422 /* LoadingView.swift in Sources */,
@@ -451,10 +464,9 @@
 				FFD0FAF9248BC9A4005FD94F /* NetworkLayer.swift in Sources */,
 				FF3210E724CCCBA100FF0986 /* Portfolio.swift in Sources */,
 				FFB04935252BAF8B0075BB79 /* Symbol.swift in Sources */,
+				FFA5E779253A48B00078CFA4 /* Coordinator+Extension.swift in Sources */,
 				FF0476F72534A6B500F9B422 /* Utility.swift in Sources */,
 				FFC677A9248D09ED00D16F6F /* PortfolioViewModel.swift in Sources */,
-				FFFCD275253A3C530063C7DD /* ShareWatchView.swift in Sources */,
-				FFFCD270253A391E0063C7DD /* PortfolioWatchView.swift in Sources */,
 				FFB04929252BAECB0075BB79 /* PortfolioView.swift in Sources */,
 				FFB04944252BB03E0075BB79 /* ErrorView.swift in Sources */,
 			);

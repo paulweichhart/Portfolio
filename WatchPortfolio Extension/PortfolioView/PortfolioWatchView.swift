@@ -40,14 +40,3 @@ struct PortfolioWatchView: View {
         }
     }
 }
-
-//struct HeaderWatchView: View {
-//
-//    var body: some View {
-//        HStack(alignment: .leading) {
-//            Text("Portfolio")
-//                .fontWeight(.bold)
-//            Spacer()
-//        }
-//    }
-//}
