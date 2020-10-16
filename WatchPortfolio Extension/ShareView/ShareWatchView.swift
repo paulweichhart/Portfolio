@@ -1,15 +1,15 @@
 //
-//  ShareView.swift
+//  ShareWatchView.swift
 //  Portfolio
 //
-//  Created by Paul Weichhart on 05.10.20.
+//  Created by Paul Weichhart on 16.10.20.
 //  Copyright © 2020 Paul Weichhart. All rights reserved.
 //
 
 import Foundation
 import SwiftUI
 
-struct ShareView: View {
+struct ShareWatchView: View {
     
     @StateObject private var viewModel: ShareViewModel
     
@@ -21,7 +21,5 @@ struct ShareView: View {
         VStack(alignment: .leading) {
         }
         .navigationTitle(viewModel.symbol.title)
-//      .navigationBarTitleDisplayMode(.large)
-        .padding(EdgeInsets(top: 0, leading: 16.0, bottom: 0, trailing: 16.0))
     }
 }

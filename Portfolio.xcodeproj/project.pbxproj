@@ -39,6 +39,9 @@
 		FFB04948252BB0D60075BB79 /* Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB04947252BB0D60075BB79 /* Error.swift */; };
 		FFC677A9248D09ED00D16F6F /* PortfolioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFC677A8248D09ED00D16F6F /* PortfolioViewModel.swift */; };
 		FFD0FAF9248BC9A4005FD94F /* NetworkLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0FAF8248BC9A4005FD94F /* NetworkLayer.swift */; };
+		FFFCD270253A391E0063C7DD /* PortfolioWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF0476ED2534A3D400F9B422 /* PortfolioWatchView.swift */; };
+		FFFCD275253A3C530063C7DD /* ShareWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFCD274253A3C530063C7DD /* ShareWatchView.swift */; };
+		FFFCD276253A3C530063C7DD /* ShareWatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFCD274253A3C530063C7DD /* ShareWatchView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +113,7 @@
 		FFB04947252BB0D60075BB79 /* Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Error.swift; sourceTree = "<group>"; };
 		FFC677A8248D09ED00D16F6F /* PortfolioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortfolioViewModel.swift; sourceTree = "<group>"; };
 		FFD0FAF8248BC9A4005FD94F /* NetworkLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkLayer.swift; sourceTree = "<group>"; };
+		FFFCD274253A3C530063C7DD /* ShareWatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareWatchView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +184,7 @@
 		FF25D5D0252F9FC300F76BE5 /* ShareView */ = {
 			isa = PBXGroup;
 			children = (
+				FFFCD274253A3C530063C7DD /* ShareWatchView.swift */,
 			);
 			path = ShareView;
 			sourceTree = "<group>";
@@ -427,6 +432,7 @@
 				FF0476F82534A6B500F9B422 /* Utility.swift in Sources */,
 				FF0476EE2534A3D400F9B422 /* PortfolioWatchView.swift in Sources */,
 				FF0476CE25349F8F00F9B422 /* Error.swift in Sources */,
+				FFFCD276253A3C530063C7DD /* ShareWatchView.swift in Sources */,
 				FF0476DE25349F9D00F9B422 /* ShareViewModel.swift in Sources */,
 				FF25D5CB252F9F1C00F76BE5 /* Symbol.swift in Sources */,
 				FF0476E225349FA100F9B422 /* ErrorView.swift in Sources */,
@@ -447,6 +453,8 @@
 				FFB04935252BAF8B0075BB79 /* Symbol.swift in Sources */,
 				FF0476F72534A6B500F9B422 /* Utility.swift in Sources */,
 				FFC677A9248D09ED00D16F6F /* PortfolioViewModel.swift in Sources */,
+				FFFCD275253A3C530063C7DD /* ShareWatchView.swift in Sources */,
+				FFFCD270253A391E0063C7DD /* PortfolioWatchView.swift in Sources */,
 				FFB04929252BAECB0075BB79 /* PortfolioView.swift in Sources */,
 				FFB04944252BB03E0075BB79 /* ErrorView.swift in Sources */,
 			);

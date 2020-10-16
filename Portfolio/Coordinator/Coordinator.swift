@@ -23,19 +23,29 @@ final class Coordinator: ObservableObject {
         weak var networkLayer: NetworkLayer?
         
         var body: some View {
-            switch destination {
+            switch (destination, isWatch) {
             
-            case .loadingView:
+            // Shared Destinations
+            case (.loadingView, _):
                 Text("Portfolio")
             
-            case let .shareView(symbol):
+            // iPhone Destinations
+            case let (.shareView(symbol), false):
                 let viewModel = ShareViewModel(symbol: symbol, networkLayer: networkLayer)
                 ShareView(viewModel: viewModel)
                 
-            case .rootView:
+            case (.rootView, false):
                 let viewModel = PortfolioViewModel(networkLayer: networkLayer)
-                isWatch ? PortfolioWatchView
                 PortfolioView(viewModel: viewModel)
+                
+            // Watch Destinations
+            case (.rootView, true):
+                let viewModel = PortfolioViewModel(networkLayer: networkLayer)
+                PortfolioWatchView(viewModel: viewModel)
+                
+            case let (.shareView(symbol), true):
+                let viewModel = ShareViewModel(symbol: symbol, networkLayer: networkLayer)
+                ShareWatchView(viewModel: viewModel)
             }
         }
     }

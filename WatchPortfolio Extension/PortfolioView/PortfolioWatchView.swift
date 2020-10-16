@@ -20,8 +20,6 @@ struct PortfolioWatchView: View {
     var body: some View {
         NavigationView {
             VStack {
-                HeaderWatchView()
-                
                 switch viewModel.symbols {
                     
                 case let .success(symbols):
@@ -39,18 +37,17 @@ struct PortfolioWatchView: View {
                 }
             }
             .navigationTitle("Portfolio")
-            .navigationBarHidden(true)
         }
     }
 }
 
-struct HeaderWatchView: View {
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text("Portfolio")
-                .font(.largeTitle)
-                .fontWeight(.bold)
-        }
-    }
-}
+//struct HeaderWatchView: View {
+//
+//    var body: some View {
+//        HStack(alignment: .leading) {
+//            Text("Portfolio")
+//                .fontWeight(.bold)
+//            Spacer()
+//        }
+//    }
+//}

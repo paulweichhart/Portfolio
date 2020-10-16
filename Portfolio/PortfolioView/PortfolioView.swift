@@ -69,6 +69,7 @@ struct PortfolioList: View {
     
     let symbols: [Symbol]
     @EnvironmentObject private var coordinator: Coordinator
+    private let spacing: CGFloat = isWatch ? 0 : 8
     
     var body: some View {
         List {
@@ -79,11 +80,11 @@ struct PortfolioList: View {
                         Text(symbol.id.localizedUppercase)
                             .bold()
                         Text(symbol.title).foregroundColor(Color.gray.opacity(0.7))
-                    }.padding(EdgeInsets(top: 8, leading: 0, bottom: 8, trailing: 0))
+                    }.padding(EdgeInsets(top: spacing, leading: 0, bottom: spacing, trailing: 0))
                 }
             }
         }
-        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 16))
+        .padding(EdgeInsets(top: 0, leading: 0, bottom: 0, trailing: 2 * spacing))
         .listStyle(PlainListStyle())
     }
 }
