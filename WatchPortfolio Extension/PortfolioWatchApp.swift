@@ -1,5 +1,5 @@
 //
-//  PortfolioApp.swift
+//  PortfolioWatchApp.swift
 //  WatchPortfolio Extension
 //
 //  Created by Paul Weichhart on 08.10.20.

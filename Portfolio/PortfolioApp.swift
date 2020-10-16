@@ -1,5 +1,5 @@
 //
-//  Portfolio.swift
+//  PortfolioApp.swift
 //  Portfolio
 //
 //  Created by Paul Weichhart on 25.07.20.
@@ -9,7 +9,7 @@
 import SwiftUI
 
 @main
-struct Portfolio: App {
+struct PortfolioApp: App {
     
     private let networkLayer = NetworkLayer()
     
